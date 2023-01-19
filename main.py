@@ -9,7 +9,7 @@ trained_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')#get 
 while True:
    successful_frame_read, frame = webcam.read()
 
-   count =1
+   count=1
    bw_img = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY) #bg convert
    coordinates = trained_data.detectMultiScale(bw_img, minNeighbors= 9) #select minimum neighbours and get face coordinates
 
@@ -30,9 +30,9 @@ while True:
    cv2.namedWindow("webcam", cv2.WINDOW_NORMAL)
    cv2.resizeWindow("webcam", 700, 500)
    cv2.imshow('webcam',frame)
-   key =cv2.waitKey(1)
+   key = cv2.waitKey(1)
 #If 'Q' is detected 
-   if key ==81 or key ==113:
+   if key==81 or key==113:
        print(f'Blurred {count-1} faces and exited')
        webcam.release()
        break
