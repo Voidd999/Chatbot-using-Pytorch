@@ -1,0 +1,120 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "Hello ",
+          "How are you",
+          "Is anyone there?",
+          "Good day",
+          "what's up?",
+          "I need help",
+          "Can you help me with"   ],
+        "responses": [
+          "Hey! Welcome to {Website}, How can i help?",
+          "Hello! Welcome to {Website}.\nI am here to help you.",
+          "Greetings!How can I help?",
+          "Hello, thanks for visiting {website}. I am here to help you.",
+          "Hi there, Welcome to {Website}\nwhat can i help you with?"
+          ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye","quit"],
+        "responses": [
+          "See you later, thanks for visiting {website}.\nWe hope to see you again.",
+          "Goodbye, Have a nice day",
+          "Bye! Come back soon."]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks",
+         "Thank you", 
+         "That's helpful", 
+         "Thank's a lot!"],
+        "responses": ["Happy to help!",
+         "No problem", 
+         "My pleasure"]
+      },
+      {
+        "tag": "items",
+        "patterns": [
+          "Which items do you have?",
+          "What kinds of items are there?",
+          "What do you sell?",
+          "product?",
+          "What is product?"
+        ],
+        "responses": [
+          "We sell {Product_name}",
+          "You can check the products on our store here {'insert link here'}",
+          "We have {Product_name}"
+           ]
+      },
+      {
+        "tag": "payments",
+        "patterns": [
+          "Do you take credit cards?",
+          "Do you accept Mastercard?",
+          "Can I pay with PayTm?",
+          "Are you cash only?" ],
+        "responses": [
+          "We accept VISA, Mastercard and Paytm",
+          "We accept most major credit cards, and Paytm"]
+      },
+      {
+        "tag": "delivery",
+        "patterns": [
+          "How long does delivery take?",
+          "How long does shipping take?",
+          "When do I get my delivery?",  
+          "Time taken for package", 
+          "package",
+          "Delivery issue"],
+        "responses": [
+          "Delivery takes 2-4 days, you can track your delivery using your {tracking id}",
+          "Our delivery method takes 2-4 days, you can track your package using your {tracking id}"  ]
+      },
+      {
+        "tag": "Price",
+        "patterns": [
+          "what is price",
+          "What is price or cost?",
+          "What is cost?",
+          "Tell me about the pricing",
+          "Where can i check the cost"  ],
+        "responses": [
+          "Our Products are available at {'insert link here'}",
+          "You can check the prices on our website here {'insert link here'}",
+          "You can check the prices on our store here {'insert link here'}"   ]
+      },
+      {
+       "tag": "Payment mode",
+       "patterns": [
+        "can you tell me payment modes?",
+        "What are the available payment modes ?",
+        "Do you accept Card?", 
+        "cod availability",
+        "Do you accept Cash?" 
+      ],
+       "responses": [
+        "Payment modes available are-\nPaytm\nCash\nVISA,Mastercard and Gift cards",
+        "You can pay via Cash, Paytm, VISA, Mastercard and Gift cards"  ]
+      },
+      {
+        "tag": "Issue",
+        "patterns": [
+          "Resolve my issue",
+          "I need help ",
+          "Refund issue" ],
+        "responses": [
+          "What is your issue?\nYou can contact the customer support at {costumer_support} for refund related issues",
+          "How can i resolve your issue?\nYou can contact the customer support at {costumer_support} for refund related issues",
+          "You can contact the customer support at {costumer_support} for refund related issues" ]
+      }
+    ]
+  }
+
+  
