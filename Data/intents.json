@@ -1,0 +1,514 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello ",
+        "How are you",
+        "Is anyone there?",
+        "Good day",
+        "what's up?",
+        "I need help",
+        "Can you help me with"
+      ],
+      "responses": [
+        "Hey! Welcome to {Website}, How can i help?",
+        "Hello! Welcome to {Website}.\nI am here to help you.",
+        "Greetings!How can I help?",
+        "Hello, thanks for visiting {website}. I am here to help you.",
+        "Hi there, Welcome to {Website}\nwhat can i help you with?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "quit"],
+      "responses": [
+        "See you later, thanks for visiting {website}.\nWe hope to see you again.",
+        "Goodbye, Have a nice day",
+        "Bye! Come back soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "No problem", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?",
+        "product?",
+        "What is product?"
+      ],
+      "responses": [
+        "We sell {Product_name}",
+        "You can check the products on our store here {'insert link here'}",
+        "We have {Product_name}"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with PayTm?",
+        "Are you cash only?",
+        "paytm accepted"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paytm",
+        "We accept most major credit cards, and Paytm"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?",
+        "Time taken for package",
+        "package",
+        "Delivery issue"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days, you can track your delivery using your {tracking id}",
+        "Our delivery method takes 2-4 days, you can track your package using your {tracking id}"
+      ]
+    },
+    {
+      "tag": "Price",
+      "patterns": [
+        "what is price",
+        "What is price or cost?",
+        "What is cost?",
+        "Tell me about the pricing",
+        "Where can i check the cost"
+      ],
+      "responses": [
+        "Our Products are available at {'insert link here'}",
+        "You can check the prices on our website here {'insert link here'}",
+        "You can check the prices on our store here {'insert link here'}"
+      ]
+    },
+    {
+      "tag": "Payment mode",
+      "patterns": [
+        "can you tell me payment modes?",
+        "What are the available payment modes ?",
+        "Do you accept Card?",
+        "cod availability",
+        "Do you accept Cash?"
+      ],
+      "responses": [
+        "Payment modes available are-\nPaytm\nCash\nVISA,Mastercard and Gift cards",
+        "You can pay via Cash, Paytm, VISA, Mastercard and Gift cards"
+      ]
+    },
+    {
+      "tag": "Issue",
+      "patterns": ["Resolve my issue", "I need help ", "Refund issue"],
+      "responses": [
+        "What is your issue?\nYou can contact the customer support at {costumer_support} for refund related issues",
+        "How can i resolve your issue?\nYou can contact the customer support at {costumer_support} for refund related issues",
+        "You can contact the customer support at {costumer_support} for refund related issues"
+      ]
+    },
+    {
+      "tag": "availability",
+      "patterns": [
+        "Is [product] in stock?",
+        "Availability of [product]",
+        "Do you have [product] in store?",
+        "Stock status for [product]"
+      ],
+      "responses": [
+        "Yes, [product] is currently in stock.",
+        "We have [product] available. You can purchase it now.",
+        "The stock status for [product] is good. It's available for purchase."
+      ]
+    },
+    {
+      "tag": "recommendation",
+      "patterns": [
+        "Can you recommend a [product]?",
+        "I need suggestions for [product]",
+        "What [product] do you suggest?",
+        "Recommend me a [product]"
+      ],
+      "responses": [
+        "Sure, I recommend trying our popular [recommended_product].",
+        "For [product], I suggest checking out [recommended_product].",
+        "A highly recommended [product] is [recommended_product]."
+      ]
+    },
+    {
+      "tag": "size_guide",
+      "patterns": [
+        "What size should I choose?",
+        "Can you provide a size guide?",
+        "How do I determine my size?",
+        "Size recommendations"
+      ],
+      "responses": [
+        "Please refer to our size guide on the website for accurate size information.",
+        "You can find the size guide on our website to help you choose the right size.",
+        "Our size guide on the website will assist you in selecting the correct size for your [product]."
+      ]
+    },
+    {
+      "tag": "returns",
+      "patterns": [
+        "What is your return policy?",
+        "Can I return [product]?",
+        "Return process",
+        "Exchange policy"
+      ],
+      "responses": [
+        "Our return policy allows returns within 30 days of purchase. Please check our website for details.",
+        "Yes, you can return [product] within our specified return period. Visit our website for the return process.",
+        "For information on returns and exchanges, please refer to our return policy on the website."
+      ]
+    },
+    {
+      "tag": "discount_code",
+      "patterns": [
+        "How can I apply a discount code?",
+        "Promo code application",
+        "Use of discount code",
+        "Applying a coupon"
+      ],
+      "responses": [
+        "During checkout, you can apply a discount code in the designated field.",
+        "To use a discount code, enter it at the checkout page before making the payment.",
+        "Applying a discount code is easy! Enter it in the provided space during the checkout process."
+      ]
+    },
+    {
+      "tag": "membership",
+      "patterns": [
+        "Tell me about your membership program",
+        "Membership benefits",
+        "Joining your membership",
+        "Do you offer a loyalty program?"
+      ],
+      "responses": [
+        "Our membership program offers exclusive benefits, including discounts and early access to promotions.",
+        "By joining our membership program, you can enjoy special perks such as discounts and member-only events.",
+        "Learn more about the benefits of our membership program on our website and sign up today!"
+      ]
+    },
+    {
+      "tag": "contact_info",
+      "patterns": [
+        "What is your contact information?",
+        "How can I contact you?",
+        "Customer support details",
+        "Contacting your team"
+      ],
+      "responses": [
+        "You can reach our customer support team at {customer_support_email} or by phone at {customer_support_phone}.",
+        "For any inquiries, feel free to contact us at {customer_support_email} or call us at {customer_support_phone}.",
+        "Our customer support team is available at {customer_support_email} and {customer_support_phone}."
+      ]
+    },
+    {
+      "tag": "privacy_policy",
+      "patterns": [
+        "Tell me about your privacy policy",
+        "Privacy and data protection",
+        "How is my data handled?",
+        "Privacy practices"
+      ],
+      "responses": [
+        "Our privacy policy outlines how we handle and protect your data. Please review it on our website for more information.",
+        "To understand our privacy practices and how your data is handled, read our privacy policy on our website.",
+        "We prioritize your privacy. Check our website for detailed information about our privacy policy and data protection practices."
+      ]
+    },
+    {
+      "tag": "product_customization",
+      "patterns": [
+        "Can I customize [product]?",
+        "Customization options",
+        "Personalization of [product]",
+        "Customizing my order"
+      ],
+      "responses": [
+        "Currently, we do not offer customization for [product].",
+        "We provide customization options for select products. Please check the product details for availability.",
+        "For information on product customization, visit the customization section on our website."
+      ]
+    },
+    {
+      "tag": "shipping_cost",
+      "patterns": [
+        "What are the shipping costs?",
+        "Shipping charges",
+        "Cost of delivery",
+        "Is shipping free?"
+      ],
+      "responses": [
+        "Shipping costs vary based on your location. You can find detailed information on shipping charges during checkout.",
+        "Shipping costs depend on your delivery address. Check the shipping details at the checkout page for accurate pricing.",
+        "Visit the checkout page for information on shipping costs to your specific location."
+      ]
+    },
+    {
+      "tag": "order_modification",
+      "patterns": [
+        "Can I modify my order?",
+        "Changing my order",
+        "Edit my order",
+        "Order adjustment"
+      ],
+      "responses": [
+        "Once an order is placed, modifications may not be possible. Please contact our customer support for assistance.",
+        "If you need to change your order, contact our customer support team as soon as possible for assistance.",
+        "Order modifications are subject to availability. Reach out to our customer support for assistance with order changes."
+      ]
+    },
+    {
+      "tag": "new_arrivals",
+      "patterns": [
+        "Show me new arrivals",
+        "What's new?",
+        "Latest products",
+        "New in stock"
+      ],
+      "responses": [
+        "Explore our latest arrivals on the website to discover the newest additions to our collection.",
+        "Check out the 'New Arrivals' section on our website for the latest and trendiest products.",
+        "Stay updated with our newest products by visiting the 'New Arrivals' category on our website."
+      ]
+    },
+    {
+      "tag": "order_confirmation",
+      "patterns": [
+        "Did my order go through?",
+        "Order confirmation",
+        "Confirmation email",
+        "Check my order status"
+      ],
+      "responses": [
+        "Upon successful order placement, you will receive a confirmation email. Check your email or order history for details.",
+        "Order confirmations are sent via email. If you haven't received one, please check your spam folder or contact our support.",
+        "To confirm your order status, log in to your account on our website or refer to the confirmation email sent to you."
+      ]
+    },
+    {
+      "tag": "bulk_purchase",
+      "patterns": [
+        "Do you offer bulk purchase discounts?",
+        "Bulk ordering",
+        "Discounts for large orders",
+        "Bulk purchase inquiry"
+      ],
+      "responses": [
+        "Yes, we provide discounts for bulk purchases. Contact our sales team for more information on bulk order discounts.",
+        "For information on discounts for large orders, reach out to our sales team through the provided contact information.",
+        "Explore our bulk purchase discounts by contacting our sales team. They will assist you with the details."
+      ]
+    },
+    {
+      "tag": "gift_cards",
+      "patterns": [
+        "Can I purchase a gift card?",
+        "Gift card availability",
+        "Buy a gift card",
+        "Gift card options"
+      ],
+      "responses": [
+        "Yes, you can purchase a gift card on our website. They make for great gifts!",
+        "Explore our website for available gift card options and purchase one for your loved ones.",
+        "Visit our website to buy a gift card. It's a perfect choice for any occasion."
+      ]
+    },
+    {
+      "tag": "lost_package",
+      "patterns": [
+        "My package is lost",
+        "Lost delivery",
+        "Package not received",
+        "Lost shipment"
+      ],
+      "responses": [
+        "I'm sorry to hear about the issue. Please contact our customer support with your {tracking id} for assistance.",
+        "If your package is lost, reach out to our customer support immediately with your {tracking id}. We'll investigate and assist you.",
+        "Lost package? Contact our customer support with your {tracking id} for prompt assistance and resolution."
+      ]
+    },
+    {
+      "tag": "store_location",
+      "patterns": [
+        "Where is your physical store located?",
+        "Store address",
+        "Brick-and-mortar location",
+        "Visit your store"
+      ],
+      "responses": [
+        "We currently operate as an online store. You can browse and purchase our products on our website.",
+        "As of now, we are exclusively an online store. Explore our website for a wide range of products.",
+        "Our store operates online, providing a convenient shopping experience. Browse our website for all available products."
+      ]
+    },
+    {
+      "tag": "product_review",
+      "patterns": [
+        "Can I see product reviews?",
+        "Reviews for [product]",
+        "Customer feedback",
+        "Product ratings"
+      ],
+      "responses": [
+        "Check the product page on our website for customer reviews and ratings of [product].",
+        "Customer reviews and ratings for [product] are available on the product page. Take a look before making a purchase.",
+        "Explore the product page for [product] to find customer reviews and ratings shared by others."
+      ]
+    },
+    {
+      "tag": "cancel_order",
+      "patterns": [
+        "How can I cancel my order?",
+        "Canceling an order",
+        "Order cancellation process",
+        "Can I cancel my recent order?"
+      ],
+      "responses": [
+        "Order cancellations are possible within a certain timeframe after placing the order. Please contact our customer support for assistance.",
+        "To cancel your order, reach out to our customer support as soon as possible with your order details.",
+        "If you wish to cancel your recent order, contact our customer support with the order details for assistance."
+      ]
+    },
+    {
+      "tag": "order_tracking",
+      "patterns": [
+        "order track",
+        "How can I track my order?",
+        "Order tracking",
+        "Track my package",
+        "Where is my order?"
+      ],
+      "responses": [
+        "You can track your order using your {tracking id}. Visit the order tracking page on our website for more information.",
+        "To track your order, use your {tracking id} on the order tracking page on our website.",
+        "Track your order using your {tracking id} on the order tracking page on our website."
+      ]
+    },
+    {
+      "tag": "tech_support",
+      "patterns": [
+        "Do you provide technical support?",
+        "Tech assistance",
+        "Technical help",
+        "Issues with your website"
+      ],
+      "responses": [
+        "For technical assistance, please contact our tech support team at {tech_support_email}.",
+        "If you are experiencing technical issues, reach out to our tech support team via {tech_support_email} for assistance.",
+        "Issues with our website? Contact our tech support team at {tech_support_email} for prompt help and resolution."
+      ]
+    },
+    {
+      "tag": "account_recovery",
+      "patterns": [
+        "I forgot my password",
+        "Account recovery",
+        "Reset password",
+        "Locked out of my account"
+      ],
+      "responses": [
+        "For password recovery, use the 'Forgot Password' option on the login page. Follow the instructions sent to your registered email.",
+        "If you forgot your password, click on 'Forgot Password' during login to initiate the recovery process via your email.",
+        "Locked out of your account? Recover your password by selecting 'Forgot Password' on the login page and following the instructions."
+      ]
+    },
+    {
+      "tag": "social_media",
+      "patterns": [
+        "What are your social media channels?",
+        "Social media presence",
+        "Follow you on social media",
+        "Connect on social platforms"
+      ],
+      "responses": [
+        "Stay connected! Follow us on social media: {social_media_links}",
+        "Join our community on social media! Find us on platforms like {social_media_links}.",
+        "For updates and engaging content, connect with us on social media. Check our website for the latest social media links."
+      ]
+    },
+    {
+      "tag": "gift_wrapping",
+      "patterns": [
+        "Do you offer gift wrapping?",
+        "Gift wrap service",
+        "Can you wrap my order?",
+        "Gift packaging options"
+      ],
+      "responses": [
+        "Yes, we provide gift wrapping services for your orders. Choose the gift wrap option during checkout for a special touch.",
+        "Make your gift extra special with our gift wrapping service. Select the option at checkout for beautifully wrapped packages.",
+        "Add a personal touch to your order with our gift wrapping service. Opt for gift wrap during checkout for a delightful presentation."
+      ]
+    },
+    {
+      "tag": "international_shipping",
+      "patterns": [
+        "Do you offer international shipping?",
+        "International delivery",
+        "Shipping to other countries",
+        "Can I ship internationally?"
+      ],
+      "responses": [
+        "Yes, we offer international shipping. Explore our website for information on shipping rates and delivery to other countries.",
+        "Experience global delivery with our international shipping service. Check our website for details on shipping to different countries.",
+        "Shipping internationally? Review our website for international shipping options, rates, and delivery times."
+      ]
+    },
+    {
+      "tag": "pre-order",
+      "patterns": [
+        "Can I pre-order upcoming products?",
+        "Pre-order options",
+        "How to pre-order",
+        "Upcoming releases pre-order"
+      ],
+      "responses": [
+        "Yes, you can pre-order upcoming products. Stay updated on our website for information about pre-order opportunities.",
+        "Secure your spot by pre-ordering upcoming releases. Visit our website for details on how to pre-order the latest products.",
+        "Be among the first to get upcoming releases by pre-ordering. Check our website for information on pre-order options and release dates."
+      ]
+    },
+    {
+      "tag": "size_exchange",
+      "patterns": [
+        "Can I exchange for a different size?",
+        "Size exchange process",
+        "Exchanging for a different size",
+        "Size doesn't fit"
+      ],
+      "responses": [
+        "If the size doesn't fit, you can initiate a size exchange. Contact our customer support for assistance in the exchange process.",
+        "We understand sizing concerns. Reach out to our customer support for guidance on exchanging for a different size.",
+        "For size-related issues, contact our customer support to explore options for exchanging your item for the correct size."
+      ]
+    },
+    {
+      "tag": "unsubscribe",
+      "patterns": [
+        "How do I unsubscribe from newsletters?",
+        "Unsubscribe from emails",
+        "Stop receiving emails",
+        "Opt-out of newsletters"
+      ],
+      "responses": [
+        "To unsubscribe from newsletters, click on the 'Unsubscribe' link at the bottom of any email you receive from us.",
+        "Manage your email preferences easily by clicking on the 'Unsubscribe' link in our newsletters.",
+        "If you wish to stop receiving emails, use the 'Unsubscribe' link at the bottom of our newsletters. We respect your preferences."
+      ]
+    }
+  ]
+}

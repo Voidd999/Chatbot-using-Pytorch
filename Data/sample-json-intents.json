@@ -38,32 +38,7 @@
          "No problem", 
          "My pleasure"]
       },
-      {
-        "tag": "items",
-        "patterns": [
-          "Which items do you have?",
-          "What kinds of items are there?",
-          "What do you sell?",
-          "product?",
-          "What is product?"
-        ],
-        "responses": [
-          "We sell {Product_name}",
-          "You can check the products on our store here {'insert link here'}",
-          "We have {Product_name}"
-           ]
-      },
-      {
-        "tag": "payments",
-        "patterns": [
-          "Do you take credit cards?",
-          "Do you accept Mastercard?",
-          "Can I pay with PayTm?",
-          "Are you cash only?" ],
-        "responses": [
-          "We accept VISA, Mastercard and Paytm",
-          "We accept most major credit cards, and Paytm"]
-      },
+
       {
         "tag": "delivery",
         "patterns": [
@@ -90,19 +65,7 @@
           "You can check the prices on our website here {'insert link here'}",
           "You can check the prices on our store here {'insert link here'}"   ]
       },
-      {
-       "tag": "Payment mode",
-       "patterns": [
-        "can you tell me payment modes?",
-        "What are the available payment modes ?",
-        "Do you accept Card?", 
-        "cod availability",
-        "Do you accept Cash?" 
-      ],
-       "responses": [
-        "Payment modes available are-\nPaytm\nCash\nVISA,Mastercard and Gift cards",
-        "You can pay via Cash, Paytm, VISA, Mastercard and Gift cards"  ]
-      },
+
       {
         "tag": "Issue",
         "patterns": [
